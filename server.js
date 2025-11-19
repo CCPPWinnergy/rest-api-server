@@ -44,6 +44,17 @@ app.get('/cards', async (req, res) => {
   }
 });
 
+// Home page
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'REST API Server is running!',
+    endpoints: {
+      health: '/health',
+      cards: '/cards'
+    }
+  });
+});
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
