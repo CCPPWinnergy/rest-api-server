@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 // Database configuration from environment
 const dbConfig = {
-  host: process.env.DB_HOST || 'medos.winnergy.co.th',
+  host: process.env.DB_HOST || '203.150.87.76',
   port: process.env.DB_PORT || 37203,
   user: process.env.DB_USER || 'pca_user2',
   password: process.env.DB_PASSWORD || 'FfR4NODjJNRtk2KY',
